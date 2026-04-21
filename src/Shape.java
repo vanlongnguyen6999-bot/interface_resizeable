@@ -1,4 +1,4 @@
-public class Shape implements Resizeable{
+public abstract class Shape implements Resizeable{
     private String color = "green";
     private boolean filled = true;
     private double side;
@@ -40,6 +40,7 @@ public class Shape implements Resizeable{
         this.side = side;
     }
 
+    public abstract double getArea();
     @Override
     public String toString() {
         return "A Shape with color of "
